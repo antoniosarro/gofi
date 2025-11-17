@@ -86,3 +86,19 @@ listbox row:selected {
   font-weight: 500;
   margin-top: 8px;
 }
+
+/* Power Menu Styles */
+.destructive-action {
+  background-color: #f38ba8;
+  color: #1e1e2e;
+  font-weight: bold;
+}
+
+.destructive-action:hover {
+  background-color: #f28ba8;
+}
+
+.dim-label {
+  color: #6c7086;
+  font-size: 11px;
+}
