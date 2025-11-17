@@ -15,6 +15,7 @@ import (
 
 	// Import modules to trigger init() registration
 	_ "github.com/antoniosarro/gofi/internal/modules/application"
+	_ "github.com/antoniosarro/gofi/internal/modules/emoji"
 	_ "github.com/antoniosarro/gofi/internal/modules/powermenu"
 	_ "github.com/antoniosarro/gofi/internal/modules/screenshot"
 

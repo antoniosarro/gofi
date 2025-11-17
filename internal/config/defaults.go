@@ -8,6 +8,7 @@ func Default() *Config {
 			"application": defaultApplicationConfig(),
 			"screenshot":  defaultScreenshotConfig(),
 			"powermenu":   defaultPowermenuConfig(),
+			"emoji":       defaultEmojiConfig(),
 		},
 	}
 }
@@ -40,5 +41,16 @@ func defaultPowermenuConfig() *ModuleConfig {
 	return &ModuleConfig{
 		Enabled:  true,
 		Settings: make(map[string]interface{}),
+	}
+}
+
+func defaultEmojiConfig() *ModuleConfig {
+	return &ModuleConfig{
+		Enabled:          true,
+		EnablePagination: false, // Use grid view instead
+		ItemsPerPage:     64,    // Items per page if pagination enabled
+		Settings: map[string]interface{}{
+			"emoji_file": "~/.config/gofi/all_emojis.txt",
+		},
 	}
 }
